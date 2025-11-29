@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
+    <title>Checkout</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/Favicon.png" />
     <!-- Bootstrap css -->
@@ -13,11 +13,16 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <!-- Swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
-    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
   </head>
   <body>
     <!-- Header Section -->
@@ -304,18 +309,20 @@
 
     <main>
       <!-- Banner sec -->
-      <section class="banner-sec" data-aos="slide-left">
+      <section class="banner-sec" data-aos="slide-down">
         <div class="banner-wrapper">
           <div class="container">
             <div class="banner-icon">
-                <img src="./assets/banner_icon.png" alt="">
+              <img src="./assets/banner_icon.png" alt="" />
             </div>
-            <h2>Blog</h2>
+            <h2>Checkout</h2>
             <div style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a class="text-black" href="index.html">Home</a></li>
+                <li class="breadcrumb-item">
+                  <a class="text-black" href="index.html">Home</a>
+                </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Blog
+                  Checkout
                 </li>
               </ol>
             </div>
@@ -323,208 +330,141 @@
         </div>
       </section>
 
-      <!-- Blog Section -->
-      <section class="blog-sec" data-aos="flip-right">
+      <!-- Checkout Sec -->
+      <section class="checkout-page" data-aos="slide-up">
         <div class="container">
-          <div class="row">
-            <!-- Blog Posts -->
-            <div class="col-lg-8">
-              <!-- Post 1 -->
-              <div class="card border-0 mb-5">
-                <img
-                  src="./assets/going.png"
-                  class="card-img-top rounded"
-                  alt="Post Image"
-                />
-                <div class="card-body px-0">
-                  <div class="post-meta">
-                    <span
-                      ><img src="./assets/dashicons_admin-users.png" alt="" />
-                      Admin</span
-                    >
-                    <span
-                      ><img src="./assets/uis_calender.png" alt="" /> 14 Oct
-                      2022</span
-                    >
-                    <span><img src="./assets/ci_tag.png" alt="" /> Wood</span>
-                  </div>
-                  <h5 class="post-title">
-                    Going all-in with millennial design
-                  </h5>
-                  <p class="post-excerpt">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Mus mauris vitae ultricies leo integer malesuada
-                    nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi
-                    blandit cursus risus at ultrices mi tempus imperdiet. Libero
-                    enim sed faucibus turpis in. Cursus mattis molestie a
-                    iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit
-                    libero. Pellentesque elit ullamcorper dignissim cras
-                    tincidunt. Pharetra et ultrices neque ornare aenean euismod
-                    elementum.
-                  </p>
-                  <a href="#" class="btn btn-link p-0">Read more</a>
-                </div>
-              </div>
+          <div class="row justify-content-between">
+            <div class="col-lg-6">
+              <h2 class="checkout-title">Billing details</h2>
 
-              <!-- Post 2 -->
-              <div class="card border-0 mb-5">
-                <img
-                  src="./assets/exploring.png"
-                  class="card-img-top rounded"
-                  alt="Post Image"
-                />
-                <div class="card-body px-0">
-                  <div class="post-meta">
-                    <span
-                      ><img src="./assets/dashicons_admin-users.png" alt="" />
-                      Admin</span
-                    >
-                    <span
-                      ><img src="./assets/uis_calender.png" alt="" /> 14 Oct
-                      2022</span
-                    >
-                    <span
-                      ><img src="./assets/ci_tag.png" alt="" /> Handmade</span
-                    >
-                  </div>
-                  <h5 class="post-title">Exploring new ways of decorating</h5>
-                  <p class="post-excerpt">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Mus mauris vitae ultricies leo integer malesuada
-                    nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi
-                    blandit cursus risus at ultrices mi tempus imperdiet. Libero
-                    enim sed faucibus turpis in. Cursus mattis molestie a
-                    iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit
-                    libero. Pellentesque elit ullamcorper dignissim cras
-                    tincidunt. Pharetra et ultrices neque ornare aenean euismod
-                    elementum.
-                  </p>
-                  <a href="#" class="btn btn-link p-0">Read more</a>
-                </div>
-              </div>
-
-              <!-- Post 3 -->
-              <div class="card border-0 mb-5">
-                <img
-                  src="./assets/handmade.png"
-                  class="card-img-top rounded"
-                  alt="Post Image"
-                />
-                <div class="card-body px-0">
-                  <div class="post-meta">
-                    <span
-                      ><img src="./assets/dashicons_admin-users.png" alt="" />
-                      Admin</span
-                    >
-                    <span
-                      ><img src="./assets/uis_calender.png" alt="" /> 14 Oct
-                      2022</span
-                    >
-                    <span><img src="./assets/ci_tag.png" alt="" /> Wood</span>
-                  </div>
-                  <h5 class="post-title">
-                    Handmade pieces that took time to make
-                  </h5>
-                  <p class="post-excerpt">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Mus mauris vitae ultricies leo integer malesuada
-                    nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi
-                    blandit cursus risus at ultrices mi tempus imperdiet. Libero
-                    enim sed faucibus turpis in. Cursus mattis molestie a
-                    iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit
-                    libero. Pellentesque elit ullamcorper dignissim cras
-                    tincidunt. Pharetra et ultrices neque ornare aenean euismod
-                    elementum.
-                  </p>
-                  <a href="#" class="btn btn-link p-0">Read more</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Sidebar -->
-            <div class="col-lg-4">
-              <div class="sidebar">
-                <!-- Search -->
-                <div class="mb-4">
-                  <form action="">
+              <form class="billing-form">
+                <div class="row mb-4">
+                  <div class="col-md-6">
+                    <label class="form-label">First Name</label>
                     <input type="text" class="form-control" />
-                    <button type="submit">
-                      <img src="./assets/akar-icons_search.png" alt="" />
-                    </button>
-                  </form>
-                </div>
-
-                <!-- Categories -->
-                <div class="mb-5">
-                  <h5 class="mb-4">Categories</h5>
-                  <div class="cate-row d-flex justify-content-between">
-                    <ul>
-                      <li>Craft</li>
-                      <li>Design</li>
-                      <li>Handmade</li>
-                      <li>Interior</li>
-                      <li>Wood</li>
-                    </ul>
-                    <ul>
-                      <li>2</li>
-                      <li>8</li>
-                      <li>7</li>
-                      <li>1</li>
-                      <li>6</li>
-                    </ul>
+                  </div>
+                  <div class="col-md-6 name-label">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" class="form-control" />
                   </div>
                 </div>
 
-                <!-- Recent Posts -->
-                <div class="recent-posts">
-                  <h5 class="mb-4">Recent Posts</h5>
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/rp1.png" alt="Recent Post" />
-                    <div>
-                      <p class="mb-0">Going all-in with millennial design</p>
-                      <small class="text-muted">03 Aug 2022</small>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/rp2.png" alt="Recent Post" />
-                    <div>
-                      <p class="mb-0">Exploring new ways of decorating</p>
-                      <small class="text-muted">03 Aug 2022</small>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/rp3.png" alt="Recent Post" />
-                    <div>
-                      <p class="mb-0">Handmade pieces that took time</p>
-                      <small class="text-muted">03 Aug 2022</small>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/rp4.png" alt="Recent Post" />
-                    <div>
-                      <p class="mb-0">Modern home in Milan</p>
-                      <small class="text-muted">03 Aug 2022</small>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/rp5.png" alt="Recent Post" />
-                    <div>
-                      <p class="mb-0">Colorful office redesign</p>
-                      <small class="text-muted">03 Aug 2022</small>
-                    </div>
-                  </div>
+                <div class="mb-4">
+                  <label class="form-label">Company Name (Optional)</label>
+                  <input type="text" class="form-control" />
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label">Country / Region</label>
+                  <select class="form-select">
+                    <option selected value="India">India</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="USA">USA</option>
+                  </select>
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label">Street address</label>
+                  <input type="text" class="form-control" />
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label">Town / City</label>
+                  <input type="text" class="form-control" />
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label">Province</label>
+                  <select class="form-select">
+                    <option selected>Western Province</option>
+                    <option>Central Province</option>
+                    <option>Southern Province</option>
+                  </select>
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label">ZIP code</label>
+                  <input type="text" class="form-control" />
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label">Phone</label>
+                  <input type="text" class="form-control" />
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label">Email address</label>
+                  <input type="email" class="form-control" />
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label">@</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Additional information"
+                  />
+                </div>
+              </form>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="checkout-summary">
+                <div class="d-flex justify-content-between mb-3">
+                  <h3>Product</h3>
+                  <h3>Subtotal</h3>
+                </div>
+
+                <div class="d-flex justify-content-between mb-2">
+                  <span style="color:#9f9f9f;">Asgaard sofa<span style="color: black;"> × 1</span></span>
+                  <span>Rs. 250,000.00</span>
+                </div>
+
+                <div class="d-flex justify-content-between mb-4 mt-4">
+                  <span style="font-weight: 500;">Subtotal</span>
+                  <span>Rs. 250,000.00</span>
+                </div>
+
+                <div class="d-flex justify-content-between mt-2 mb-4" style="border-bottom: 2px solid #D9D9D9; padding-bottom: 33px;">
+                  <span style="font-weight: 500;">Total</span>
+                  <strong class="total-amount" style="font-size: 22px;">Rs. 250,000.00</strong>
+                </div>
+
+                <div class="payment-box">
+                  <label class="payment-option active text-black">
+                    <input type="radio" name="payment" checked />
+                    Direct Bank Transfer
+                  </label>
+
+                  <p class="payment-desc">
+                    Make your payment directly into our bank account. Please use
+                    your Order ID as the payment reference. Your order will not
+                    be shipped until the funds have cleared in our account.
+                  </p>
+
+                  <label class="payment-option mt-4">
+                    <input type="radio" name="payment" />
+                    Direct Bank Transfer
+                  </label>
+
+                  <label class="payment-option mt-3">
+                    <input type="radio" name="payment" />
+                    Cash On Delivery
+                  </label>
+
+                  <p class="privacy-text">
+                    Your personal data will be used to support your experience
+                    throughout this website, to manage access to your account,
+                    and for other purposes described in our
+                    <a href="#">privacy policy</a>.
+                  </p>
+                </div>
+
+                <div>
+                  <button class="place-order-btn">Place order</button>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="pagination">
-            <a href="#" class="active">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">Next</a>
           </div>
         </div>
       </section>
@@ -571,7 +511,6 @@
         </div>
       </section>
     </main>
-
     <!-- Footer Sec -->
     <footer class="ftr-sec">
       <div class="ftr-wrapper">
@@ -581,7 +520,10 @@
               <div class="ftr-logo">
                 <img src="./assets/ftr-logo.png" alt="" />
               </div>
-              <p class="ftr-text" style="max-width: 285px; margin-top: 50px; color: #9F9F9F;">
+              <p
+                class="ftr-text"
+                style="max-width: 285px; margin-top: 50px; color: #9f9f9f"
+              >
                 400 University Drive Suite 200 Coral Gables, <br />
                 FL 33134 USA
               </p>
@@ -621,10 +563,14 @@
             </div>
           </div>
           <span>
-            2023 
-            <a style="margin: 35px 0 38px; color: black" href="" class="copyright"
-            >furino.</a
-          > All rights reverved
+            2023
+            <a
+              style="margin: 35px 0 38px; color: black"
+              href=""
+              class="copyright"
+              >furino.</a
+            >
+            All rights reverved
           </span>
         </div>
       </div>
@@ -636,10 +582,12 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
       AOS.init({
-        duration: 2000,
+        duration: 500,
         once: true,
         offset: 120,
       });

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
+    <title>Cart</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/Favicon.png" />
     <!-- Bootstrap css -->
@@ -13,11 +13,16 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <!-- Swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
-    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
   </head>
   <body>
     <!-- Header Section -->
@@ -310,221 +315,82 @@
             <div class="banner-icon">
                 <img src="./assets/banner_icon.png" alt="">
             </div>
-            <h2>Blog</h2>
+            <h2>Cart</h2>
             <div style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a class="text-black" href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Blog
+                <li class="breadcrumb-item">
+                  <a class="text-black" href="index.html">Home</a>
                 </li>
+                <li class="breadcrumb-item active" aria-current="page">Cart</li>
               </ol>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Blog Section -->
-      <section class="blog-sec" data-aos="flip-right">
+      <!-- Cart Section -->
+      <section class="cart-page" data-aos="fade-right">
         <div class="container">
           <div class="row">
-            <!-- Blog Posts -->
+            <!-- CART TABLE -->
             <div class="col-lg-8">
-              <!-- Post 1 -->
-              <div class="card border-0 mb-5">
-                <img
-                  src="./assets/going.png"
-                  class="card-img-top rounded"
-                  alt="Post Image"
-                />
-                <div class="card-body px-0">
-                  <div class="post-meta">
-                    <span
-                      ><img src="./assets/dashicons_admin-users.png" alt="" />
-                      Admin</span
-                    >
-                    <span
-                      ><img src="./assets/uis_calender.png" alt="" /> 14 Oct
-                      2022</span
-                    >
-                    <span><img src="./assets/ci_tag.png" alt="" /> Wood</span>
-                  </div>
-                  <h5 class="post-title">
-                    Going all-in with millennial design
-                  </h5>
-                  <p class="post-excerpt">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Mus mauris vitae ultricies leo integer malesuada
-                    nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi
-                    blandit cursus risus at ultrices mi tempus imperdiet. Libero
-                    enim sed faucibus turpis in. Cursus mattis molestie a
-                    iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit
-                    libero. Pellentesque elit ullamcorper dignissim cras
-                    tincidunt. Pharetra et ultrices neque ornare aenean euismod
-                    elementum.
-                  </p>
-                  <a href="#" class="btn btn-link p-0">Read more</a>
+              <div class="cart-table">
+                <!-- Table Header -->
+                <div class="cart-header d-flex align-items-center">
+                  <div class="col-4">Product</div>
+                  <div class="col-2 dn">Price</div>
+                  <div class="col-2">Quantity</div>
+                  <div class="col-2 dn">Subtotal</div>
+                  <div class="col-2"></div>
                 </div>
-              </div>
 
-              <!-- Post 2 -->
-              <div class="card border-0 mb-5">
-                <img
-                  src="./assets/exploring.png"
-                  class="card-img-top rounded"
-                  alt="Post Image"
-                />
-                <div class="card-body px-0">
-                  <div class="post-meta">
-                    <span
-                      ><img src="./assets/dashicons_admin-users.png" alt="" />
-                      Admin</span
-                    >
-                    <span
-                      ><img src="./assets/uis_calender.png" alt="" /> 14 Oct
-                      2022</span
-                    >
-                    <span
-                      ><img src="./assets/ci_tag.png" alt="" /> Handmade</span
-                    >
+                <!-- Product Row -->
+                <div class="cart-row d-flex align-items-center">
+                  <!-- Product image -->
+                  <div class="col-4 d-flex align-items-center gap-3 d-column">
+                    <a href="./Asgaard_Sofa.html"><img src="./assets/sofa icon.png" class="cart-img" /></a>
+                    <span class="cart-product-name">Asgaard sofa</span>
                   </div>
-                  <h5 class="post-title">Exploring new ways of decorating</h5>
-                  <p class="post-excerpt">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Mus mauris vitae ultricies leo integer malesuada
-                    nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi
-                    blandit cursus risus at ultrices mi tempus imperdiet. Libero
-                    enim sed faucibus turpis in. Cursus mattis molestie a
-                    iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit
-                    libero. Pellentesque elit ullamcorper dignissim cras
-                    tincidunt. Pharetra et ultrices neque ornare aenean euismod
-                    elementum.
-                  </p>
-                  <a href="#" class="btn btn-link p-0">Read more</a>
-                </div>
-              </div>
 
-              <!-- Post 3 -->
-              <div class="card border-0 mb-5">
-                <img
-                  src="./assets/handmade.png"
-                  class="card-img-top rounded"
-                  alt="Post Image"
-                />
-                <div class="card-body px-0">
-                  <div class="post-meta">
-                    <span
-                      ><img src="./assets/dashicons_admin-users.png" alt="" />
-                      Admin</span
-                    >
-                    <span
-                      ><img src="./assets/uis_calender.png" alt="" /> 14 Oct
-                      2022</span
-                    >
-                    <span><img src="./assets/ci_tag.png" alt="" /> Wood</span>
+                  <!-- Price -->
+                  <div class="col-2 cart-price dn">Rs. 250,000.00</div>
+
+                  <!-- Quantity -->
+                  <div class="col-2 ps-3">
+                    <input type="number" value="1" class="qty-input" />
                   </div>
-                  <h5 class="post-title">
-                    Handmade pieces that took time to make
-                  </h5>
-                  <p class="post-excerpt">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Mus mauris vitae ultricies leo integer malesuada
-                    nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi
-                    blandit cursus risus at ultrices mi tempus imperdiet. Libero
-                    enim sed faucibus turpis in. Cursus mattis molestie a
-                    iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit
-                    libero. Pellentesque elit ullamcorper dignissim cras
-                    tincidunt. Pharetra et ultrices neque ornare aenean euismod
-                    elementum.
-                  </p>
-                  <a href="#" class="btn btn-link p-0">Read more</a>
-                </div>
-              </div>
-            </div>
 
-            <!-- Sidebar -->
-            <div class="col-lg-4">
-              <div class="sidebar">
-                <!-- Search -->
-                <div class="mb-4">
-                  <form action="">
-                    <input type="text" class="form-control" />
-                    <button type="submit">
-                      <img src="./assets/akar-icons_search.png" alt="" />
+                  <!-- Subtotal -->
+                  <div class="col-2 cart-subtotal dn">Rs. 250,000.00</div>
+
+                  <!-- Remove -->
+                  <div class="col-2">
+                    <button class="remove-btn">
+                      <img src="./assets/delete-filled.png" alt="remove" />
                     </button>
-                  </form>
-                </div>
-
-                <!-- Categories -->
-                <div class="mb-5">
-                  <h5 class="mb-4">Categories</h5>
-                  <div class="cate-row d-flex justify-content-between">
-                    <ul>
-                      <li>Craft</li>
-                      <li>Design</li>
-                      <li>Handmade</li>
-                      <li>Interior</li>
-                      <li>Wood</li>
-                    </ul>
-                    <ul>
-                      <li>2</li>
-                      <li>8</li>
-                      <li>7</li>
-                      <li>1</li>
-                      <li>6</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <!-- Recent Posts -->
-                <div class="recent-posts">
-                  <h5 class="mb-4">Recent Posts</h5>
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/rp1.png" alt="Recent Post" />
-                    <div>
-                      <p class="mb-0">Going all-in with millennial design</p>
-                      <small class="text-muted">03 Aug 2022</small>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/rp2.png" alt="Recent Post" />
-                    <div>
-                      <p class="mb-0">Exploring new ways of decorating</p>
-                      <small class="text-muted">03 Aug 2022</small>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/rp3.png" alt="Recent Post" />
-                    <div>
-                      <p class="mb-0">Handmade pieces that took time</p>
-                      <small class="text-muted">03 Aug 2022</small>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/rp4.png" alt="Recent Post" />
-                    <div>
-                      <p class="mb-0">Modern home in Milan</p>
-                      <small class="text-muted">03 Aug 2022</small>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/rp5.png" alt="Recent Post" />
-                    <div>
-                      <p class="mb-0">Colorful office redesign</p>
-                      <small class="text-muted">03 Aug 2022</small>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="pagination">
-            <a href="#" class="active">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">Next</a>
+
+            <!-- CART TOTAL BOX -->
+            <div class="col-lg-4">
+              <div class="cart-totals-box">
+                <h3>Cart Totals</h3>
+
+                <div class="cart-total-row d-flex justify-content-between mb-3">
+                  <span class="text-bold">Subtotal</span>
+                  <span class="light-text">Rs. 250,000.00</span>
+                </div>
+
+                <div class="cart-total-row d-flex justify-content-between">
+                  <span class="text-bold">Total</span>
+                  <span class="total-amount">Rs. 250,000.00</span>
+                </div>
+
+                <a href="./checkout.html" class="checkout-btn btn">Check Out</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -581,7 +447,10 @@
               <div class="ftr-logo">
                 <img src="./assets/ftr-logo.png" alt="" />
               </div>
-              <p class="ftr-text" style="max-width: 285px; margin-top: 50px; color: #9F9F9F;">
+              <p
+                class="ftr-text"
+                style="max-width: 285px; margin-top: 50px; color: #9f9f9f"
+              >
                 400 University Drive Suite 200 Coral Gables, <br />
                 FL 33134 USA
               </p>
@@ -621,10 +490,14 @@
             </div>
           </div>
           <span>
-            2023 
-            <a style="margin: 35px 0 38px; color: black" href="" class="copyright"
-            >furino.</a
-          > All rights reverved
+            2023
+            <a
+              style="margin: 35px 0 38px; color: black"
+              href=""
+              class="copyright"
+              >furino.</a
+            >
+            All rights reverved
           </span>
         </div>
       </div>
@@ -636,10 +509,12 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
       AOS.init({
-        duration: 2000,
+        duration: 1000,
         once: true,
         offset: 120,
       });

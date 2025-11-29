@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Asgaard Sofa</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/Favicon.png" />
     <!-- Bootstrap css -->
@@ -13,16 +13,11 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <!-- Swiper css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/Asgaard_Sofa.css" />
   </head>
   <body>
     <!-- Header Section -->
@@ -308,52 +303,185 @@
     </header>
 
     <main>
-      <!-- Hero Section -->
-      <section class="hero-sec" data-aos="zoom-out">
-        <div class="hero-wrapper">
-          <div class="container-fluid">
-            <div class="hero d-flex justify-content-end align-items-center">
-              <div class="hero-cnt">
-                <h4>New Arrival</h4>
-                <h1>
-                  Discover Our <br />
-                  New Collection
-                </h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  <br />
-                  elit tellus, luctus nec ullamcorper mattis.
-                </p>
-                <a class="hero-btn" href="./Asgaard_Sofa.html">BUY NOW</a>
+      <!-- Bar Section -->
+      <section class="bar-sec">
+        <div class="bar-wrapper">
+          <div class="container">
+            <div style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a class="text-black" href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a class="text-black" href="shop.html">Shop</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Asgaard sofa
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Sec -->
+      <section class="feature-sec" data-aos="zoom-in">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="product-gallery d-flex gap-4">
+                <div class="thumbs d-flex flex-column gap-3">
+                  <img
+                    src="./assets/sofa1.png"
+                    class="thumb img-fluid active-thumb"
+                    onclick="changeImage(this)"
+                  />
+                  <img
+                    src="./assets/sofa2.png"
+                    class="thumb img-fluid"
+                    onclick="changeImage(this)"
+                  />
+                  <img
+                    src="./assets/sofa3.png"
+                    class="thumb img-fluid"
+                    onclick="changeImage(this)"
+                  />
+                  <img
+                    src="./assets/sofa4.png"
+                    class="thumb img-fluid"
+                    onclick="changeImage(this)"
+                  />
+                </div>
+                <div class="main-image img-fluid">
+                  <img id="bigImage" src="./assets/sofa_main.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <h2>Asgaard sofa</h2>
+              <p>Rs. 250,000.00</p>
+              <div class="review">
+                <img src="./assets/review.png" alt="" />
+                <img
+                  style="margin-left: 10px"
+                  src="./assets/Line 5.png"
+                  alt=""
+                />
+                <span>5 Customer Review</span>
+              </div>
+              <p
+                class="feature-text"
+                style="
+                  color: black;
+                  font-size: 13px;
+                  max-width: 424px;
+                  margin: 18px 0 22px;
+                "
+              >
+                Setting the bar as one of the loudest speakers in its class, the
+                Kilburn is a compact, stout-hearted hero with a well-balanced
+                audio which boasts a clear midrange and extended highs for a
+                sound.
+              </p>
+              <div class="sizes">
+                <div class="size-label">Size</div>
+                <div class="size-options">
+                  <a href="#" class="active">L</a>
+                  <a href="#">XL</a>
+                  <a href="#">XS</a>
+                </div>
+              </div>
+              <div class="colors">
+                <div class="color-label">Color</div>
+                <div class="color-options">
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="cart-btns">
+                <div class="quantity">
+                  <a href="#">-</a>
+                  <span>1</span>
+                  <a href="#">+</a>
+                </div>
+                <a href="./cart.html" class="f-btn">Add To Cart</a>
+                <a href="#" class="f-btn">+ Compare</a>
+              </div>
+              <hr style="border: 1px solid #d9d9d9; margin: 60px 0 41px" />
+              <div class="product-info">
+                <ul class="category">
+                  <li>SKU</li>
+                  <li>Category</li>
+                  <li>Tags</li>
+                  <li>Share</li>
+                </ul>
+                <ul class="colon">
+                  <li>:</li>
+                  <li>:</li>
+                  <li>:</li>
+                  <li>:</li>
+                </ul>
+                <ul class="values">
+                  <li>SS001</li>
+                  <li>Sofas</li>
+                  <li>Sofa, Chair, Home, Shop</li>
+                  <li style="display: flex; gap: 25px">
+                    <a href=""><img src="./assets/fb.png" alt="" /></a>
+                    <a href=""
+                      ><img src="./assets/linkedin-box-fill.png" alt=""
+                    /></a>
+                    <a href=""
+                      ><img src="./assets/twitter-circle-filled.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Range Section -->
-      <section class="range-sec" data-aos="slide-left">
-        <div class="container">
-          <h2>Browse The Range</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div class="row row-gap-2 justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4">
-              <figure class="range-card">
-                <img class="img-fluid" src="./assets/Dining.png" alt="" />
-              </figure>
-              <h2>Dinning</h2>
+      <!-- Description Sec -->
+      <section class="description-sec" data-aos="slide-left">
+        <div class="description-wrapper">
+          <div class="container">
+            <div class="text-box">
+              <div class="title-row">
+                <a style="font-weight: bold; color: black" href=""
+                  >Description</a
+                >
+                <a href="">Additional Information</a>
+                <a href="">Reviews [5]</a>
+              </div>
+              <p>
+                Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn
+                portable active stereo speaker takes the unmistakable look and
+                sound of Marshall, unplugs the chords, and takes the show on the
+                road.
+              </p>
+              <p style="margin: 30px 0 36px">
+                Weighing in under 7 pounds, the Kilburn is a lightweight piece
+                of vintage styled engineering. Setting the bar as one of the
+                loudest speakers in its class, the Kilburn is a compact,
+                stout-hearted hero with a well-balanced audio which boasts a
+                clear midrange and extended highs for a sound that is both
+                articulate and pronounced. The analogue knobs allow you to fine
+                tune the controls to your personal preferences while the
+                guitar-influenced leather strap enables easy and stylish travel.
+              </p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <figure class="range-card">
-                <img class="img-fluid" src="./assets/Living room.png" alt="" />
-              </figure>
-              <h2>Living</h2>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <figure class="range-card">
-                <img class="img-fluid" src="./assets/Bedroom.png" alt="" />
-              </figure>
-              <h2>Bedroom</h2>
+            <div class="row">
+              <div class="col-xl-6">
+                <figure>
+                  <img class="img-fluid" src="./assets/d1.png" alt="" />
+                </figure>
+              </div>
+              <div class="col-xl-6">
+                <figure>
+                  <img class="img-fluid" src="./assets/d2.png" alt="" />
+                </figure>
+              </div>
             </div>
           </div>
         </div>
@@ -363,7 +491,7 @@
       <section class="product-sec" data-aos="slide-right">
         <div class="container">
           <h2 style="text-align: center; font-size: 40px; margin-bottom: 30px">
-            Our Products
+            Related Products
           </h2>
           <div class="row row-gap-3 justify-content-center">
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
@@ -389,13 +517,16 @@
                     <span
                       ><a href="/"><img src="./assets/compare.png" alt="" /></a>
                       Compare
-                      </span
-                    >
+                    </span>
                     <span
-                      ><a data-bs-toggle="offcanvas"
-                      data-bs-target="#wishlistSidebar"><img src="./assets/like.png" alt="" /><span>Like</span></a>
-                      </span
-                    >
+                      ><a
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#wishlistSidebar"
+                        ><img src="./assets/like.png" alt="" /><span
+                          >Like</span
+                        ></a
+                      >
+                    </span>
                   </div>
                 </div>
               </div>
@@ -420,13 +551,16 @@
                     <span
                       ><a href="/"><img src="./assets/compare.png" alt="" /></a>
                       Compare
-                      </span
-                    >
+                    </span>
                     <span
-                      ><a data-bs-toggle="offcanvas"
-                      data-bs-target="#wishlistSidebar"><img src="./assets/like.png" alt="" /><span>Like</span></a>
-                      </span
-                    >
+                      ><a
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#wishlistSidebar"
+                        ><img src="./assets/like.png" alt="" /><span
+                          >Like</span
+                        ></a
+                      >
+                    </span>
                   </div>
                 </div>
               </div>
@@ -454,13 +588,16 @@
                     <span
                       ><a href="/"><img src="./assets/compare.png" alt="" /></a>
                       Compare
-                      </span
-                    >
+                    </span>
                     <span
-                      ><a data-bs-toggle="offcanvas"
-                      data-bs-target="#wishlistSidebar"><img src="./assets/like.png" alt="" /><span>Like</span></a>
-                      </span
-                    >
+                      ><a
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#wishlistSidebar"
+                        ><img src="./assets/like.png" alt="" /><span
+                          >Like</span
+                        ></a
+                      >
+                    </span>
                   </div>
                 </div>
               </div>
@@ -491,152 +628,16 @@
                     <span
                       ><a href="/"><img src="./assets/compare.png" alt="" /></a>
                       Compare
-                      </span
-                    >
+                    </span>
                     <span
-                      ><a data-bs-toggle="offcanvas"
-                      data-bs-target="#wishlistSidebar"><img src="./assets/like.png" alt="" /><span>Like</span></a>
-                      </span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
-              <div class="product-card">
-                <img class="img-fluid" src="./assets/Grifo.png" alt="" />
-                <div class="product-crd-cnt">
-                  <h2>Grifo</h2>
-                  <p>Night lamp</p>
-                  <h3 style="font-size: 18px">Rp 1.500.000</h3>
-                </div>
-                <div class="overlay">
-                  <div class="mb-4">
-                    <a href="./cart.html" class="add-to-cart">Add to cart</a>
-                  </div>
-                  <div class="actions">
-                    <span
-                      ><a href="/"><img src="./assets/share.png" alt="" /></a>
-                      Share</span
-                    >
-                    <span
-                      ><a href="/"><img src="./assets/compare.png" alt="" /></a>
-                      Compare
-                      </span
-                    >
-                    <span
-                      ><a data-bs-toggle="offcanvas"
-                      data-bs-target="#wishlistSidebar"><img src="./assets/like.png" alt="" /><span>Like</span></a>
-                      </span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
-              <div class="product-card">
-                <img class="img-fluid" src="./assets/Muggo.png" alt="" />
-                <div
-                  class="badge"
-                  style="padding: 12px 5px; background: #2ec1ac"
-                >
-                  New
-                </div>
-                <div class="product-crd-cnt">
-                  <h2>Muggo</h2>
-                  <p>Small mug</p>
-                  <h3 style="font-size: 18px">Rp 150.000</h3>
-                </div>
-                <div class="overlay">
-                  <div class="mb-4">
-                    <a href="./cart.html" class="add-to-cart">Add to cart</a>
-                  </div>
-                  <div class="actions">
-                    <span
-                      ><a href="/"><img src="./assets/share.png" alt="" /></a>
-                      Share</span
-                    >
-                    <span
-                      ><a href="/"><img src="./assets/compare.png" alt="" /></a>
-                      Compare
-                      </span
-                    >
-                    <span
-                      ><a data-bs-toggle="offcanvas"
-                      data-bs-target="#wishlistSidebar"><img src="./assets/like.png" alt="" /><span>Like</span></a>
-                      </span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
-              <div class="product-card">
-                <img class="img-fluid" src="./assets/Pingky.png" alt="" />
-                <div class="badge">-50%</div>
-                <div class="product-crd-cnt">
-                  <h2>Pingky</h2>
-                  <p>Cute bed set</p>
-                  <h3 style="font-size: 18px">
-                    Rp 7.000.000 <span>Rp 14.000.000</span>
-                  </h3>
-                </div>
-                <div class="overlay">
-                  <div class="mb-4">
-                    <a href="./cart.html" class="add-to-cart">Add to cart</a>
-                  </div>
-                  <div class="actions">
-                    <span
-                      ><a href="/"><img src="./assets/share.png" alt="" /></a>
-                      Share</span
-                    >
-                    <span
-                      ><a href="/"><img src="./assets/compare.png" alt="" /></a>
-                      Compare
-                      </span
-                    >
-                    <span
-                      ><a data-bs-toggle="offcanvas"
-                      data-bs-target="#wishlistSidebar"><img src="./assets/like.png" alt="" /><span>Like</span></a>
-                      </span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
-              <div class="product-card">
-                <img class="img-fluid" src="./assets/Potty.png" alt="" />
-                <div
-                  class="badge"
-                  style="padding: 12px 5px; background: #2ec1ac"
-                >
-                  New
-                </div>
-                <div class="product-crd-cnt">
-                  <h2>Potty</h2>
-                  <p>Minimalist flower pot</p>
-                  <h3 style="font-size: 18px">Rp 500.000</h3>
-                </div>
-                <div class="overlay">
-                  <div class="mb-4">
-                    <a href="./cart.html" class="add-to-cart">Add to cart</a>
-                  </div>
-                  <div class="actions">
-                    <span
-                      ><a href="/"><img src="./assets/share.png" alt="" /></a>
-                      Share</span
-                    >
-                    <span
-                      ><a href="/"><img src="./assets/compare.png" alt="" /></a>
-                      Compare
-                      </span
-                    >
-                    <span
-                      ><a data-bs-toggle="offcanvas"
-                      data-bs-target="#wishlistSidebar"><img src="./assets/like.png" alt="" /><span>Like</span></a>
-                      </span
-                    >
+                      ><a
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#wishlistSidebar"
+                        ><img src="./assets/like.png" alt="" /><span
+                          >Like</span
+                        ></a
+                      >
+                    </span>
                   </div>
                 </div>
               </div>
@@ -644,85 +645,6 @@
           </div>
           <a class="show-more-btn" href="./shop.html"> Show More</a>
         </div>
-      </section>
-
-      <!-- Explore section -->
-      <section class="explore-sec" data-aos="slide-left">
-        <div class="explore-wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-4 col-lg-12">
-                <div class="explore-txt">
-                  <h2>50+ Beautiful rooms inspiration</h2>
-                  <p>
-                    Our designer already made a lot of beautiful prototipe of
-                    rooms that inspire you
-                  </p>
-                  <a href="" class="explore-btn">Explore More</a>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-6">
-                <figure class="explore-img">
-                  <img class="img-fluid" src="./assets/explore 1.png" alt="" />
-                  <div class="exp-text-box">
-                    <h4 style="font-weight: 300; font-size: 16px">
-                      01 — Bed Room
-                    </h4>
-                    <h3>Inner Peace</h3>
-                    <a href="#" class="explore-arrow"
-                      ><img src="./assets/explore-arrow.png" alt=""
-                    /></a>
-                  </div>
-                </figure>
-              </div>
-              <div class="col-xl-4 col-lg-6">
-                <div class="explore-slider">
-                  <!-- Slider main container -->
-                  <div class="swiper" id="explore-slider">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                      <!-- Slides -->
-                      <div class="swiper-slide">
-                        <figure>
-                          <img src="./assets/explore 2.png" alt="" />
-                        </figure>
-                      </div>
-                      <div class="swiper-slide">
-                        <figure>
-                          <img src="./assets/explore 3.png" alt="" />
-                        </figure>
-                      </div>
-                      <div class="swiper-slide">
-                        <figure>
-                          <img src="./assets/explore 2.png" alt="" />
-                        </figure>
-                      </div>
-                      <div class="swiper-slide">
-                        <figure>
-                          <img src="./assets/explore 3.png" alt="" />
-                        </figure>
-                      </div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-next"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Funiro gallery sec -->
-      <section class="funiro-gallery-sec" data-aos="slide-right">
-        <div class="gallery-heading">
-          <h3>Share your setup with</h3>
-          <h2>#FuniroFurniture</h2>
-        </div>
-        <div class="funiro-gallery-wrapper"></div>
       </section>
     </main>
 
@@ -797,8 +719,6 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    <!-- Swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
       AOS.init({
@@ -808,5 +728,6 @@
       });
     </script>
     <script src="./js/index.js"></script>
+    <script src="./js/Asgaard_Sofa.js"></script>
   </body>
 </html>
